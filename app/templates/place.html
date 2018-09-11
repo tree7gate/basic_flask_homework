@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{% block content %}
+  <h3>Location Names</h3>
+  {% for name in names %}
+    <p class='make_inline'>{{name}}</p>
+  {% endfor %}
+  {% for k, v in d.items() %}
+    <p class='text1'>{{ k }}: {{ v }}</p>
+  {% endfor %}
+{% endblock%}

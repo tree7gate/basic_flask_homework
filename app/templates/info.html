@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block content %}
+  <p>This page contains a lot of info</p>
+  <p>{{ copy_right }}</p>
+  {% for k, v in d.items() %}
+    {% if v==31 %}
+      <p class=text1>{{ k }}: {{ v }} days</p>
+    {% else %}
+      <p>{{ k }}: {{ v }} days</p>
+    {% endif %}
+  {% endfor %}
+  <ul>
+    {% for season in seasons %}
+      <li class='base_li'>{{ season }}</li>
+    {% endfor %}
+  </ul>
+{% endblock%}

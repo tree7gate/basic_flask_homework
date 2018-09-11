@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Flask Homework</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+  </head>
+  <body>
+    <nav>
+      <ul class='base_ul'>
+        <li class='base_li'><a href="{{ url_for('index') }}" class='base_a'>Home</a></li>
+        <li class='base_li'><a href="{{ url_for('site_info')}}" class='base_a'>Information</a></li>
+        <li class='base_li'><a href="{{ url_for('place')}}" class='base_a'>Location</a></li>
+        <li class='base_li'><a href="{{ url_for('my_redirect') }}" class='base_a'>Back</a></li>
+      </ul>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

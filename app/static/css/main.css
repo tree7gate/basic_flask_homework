@@ -1,0 +1,27 @@
+
+.base_li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+  max-width: 600;
+}
+
+.base_a {
+  text-decoration: none;
+}
+
+.text1 {
+  color: steelblue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.make_inline {
+  display: inline-block;
+  margin-right: 5px;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>List of Animals</h1>
+  <ul>
+    {% for animal in list %}
+      {% if animal == 'Hippo' %}
+        <li><h2>{{ animal }}</h2></li>
+      {% else %}
+        <li>{{ animal }}</li>
+      {% endif %}
+    {% endfor %}
+    {% for k, v in d.items() %}
+      <p>{{ k }}--->{{ v }}</p>
+    {% endfor %}
+  </ul>
+{% endblock %}
